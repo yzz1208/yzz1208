@@ -649,6 +649,21 @@
     <article id="post-Maven" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/07/21/Maven/">Maven</a>
+    </h1>
+  
+
+        
+        <a href="/2023/07/21/Maven/" class="archive-article-date">
+  	<time datetime="2023-07-21T02:13:30.430Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-07-21</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h1><h2 id="1-分模块开发"><a href="#1-分模块开发" class="headerlink" title="1.分模块开发"></a>1.分模块开发</h2><ul>
@@ -870,7 +885,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="正则表达式（regular-expression"><a href="#正则表达式（regular-expression" class="headerlink" title="正则表达式（regular expression )"></a>正则表达式（regular expression )</h1><pre><code>     ——处理文本的利器  对字符串执行模式匹配的技术
+        <p>title: 正则表达式</p>
+<h1 id="正则表达式（regular-expression"><a href="#正则表达式（regular-expression" class="headerlink" title="正则表达式（regular expression )"></a>正则表达式（regular expression )</h1><pre><code>     ——处理文本的利器  对字符串执行模式匹配的技术
 </code></pre>
 <h2 id="1-底层实现"><a href="#1-底层实现" class="headerlink" title="1.底层实现"></a>1.底层实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.创建Pattern对象 ，模式对象 可以理解为正则表达式对象</span></span><br><span class="line"><span class="type">Pattern</span> <span class="variable">pattern</span> <span class="operator">=</span> Pattern.compile(<span class="string">&quot;[a-zA-Z]+&quot;</span>);</span><br><span class="line"><span class="comment">// 2.创建一个匹配对象</span></span><br><span class="line"><span class="type">Matcher</span> <span class="variable">matcher</span> <span class="operator">=</span> pattern.matcher(content);</span><br><span class="line"><span class="comment">// matcher 匹配器按照 pattern (模式，样式） 到content 文本中去匹配</span></span><br><span class="line"><span class="comment">// 3.开始循环匹配</span></span><br><span class="line"><span class="keyword">while</span> (matcher.find())&#123;</span><br><span class="line">    <span class="comment">// 匹配的内容放到 m.group(0)中</span></span><br><span class="line">    System.out.println(<span class="string">&quot;结果:&quot;</span>+matcher.group(<span class="number">0</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
